@@ -4,6 +4,10 @@ Jana Straková, Milan Straka and Jan Hajič
 https://aclweb.org/anthology/papers/P/P19/P19-1527/
 {strakova,straka,hajic}@ufal.mff.cuni.cz
 
+Run for Russian
+---------------
+./tagger.py --train_data=ru/train.txt --test_data=ru/test.txt --decoding=seq2seq --form_wes_model=/home/dima/models/ArModel100w2v.txt --name=seq2seq+w2v
+
 License
 -------
 

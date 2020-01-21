@@ -1,3 +1,4 @@
+Cython
 fastText
 tensorflow<2.0
 git+https://github.com/danielfrg/word2vec
