@@ -1,4 +1,4 @@
 Cython
 fastText
-tensorflow<2.0
+tensorflow-gpu==1.14
 git+https://github.com/danielfrg/word2vec
