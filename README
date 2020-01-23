@@ -8,6 +8,10 @@ Run for Russian
 ---------------
 ./tagger.py --train_data=ru/train.txt --test_data=ru/test.txt --decoding=seq2seq --form_wes_model=/home/dima/models/ArModel100w2v.txt --name=seq2seq+w2v
 
+Run crossvalidation
+-------------------
+See script setup_cv_data.sh for loading and converting data from an external source into applied BILOU format. Further, see script export_cv_predictions.sh for teaching and extracting predictions from models.
+
 License
 -------
 
