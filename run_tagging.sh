@@ -11,9 +11,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
 for i in $(seq -f "%02g" 1 $NUMBER_OF_FOLDS)
 do
-	mkdir $ACL_ROOT/rucv/$i
-	python convert.py --input $ACL_ROOT/cv/$i/train.txt --output $ACL_ROOT/rucv/$i/train.txt
-	python convert.py --input $ACL_ROOT/cv/$i/test.txt --output $ACL_ROOT/rucv/$i/test.txt
 	./tagger.py --train_data=$ACL_ROOT/rucv/$i/train.txt --test_data=$ACL_ROOT/rucv/$i/test.txt --decoding=seq2seq --form_wes_model=$MODELS_ROOT/ArModel100w2v.txt --name=seq2seq+w2v
 done
 
